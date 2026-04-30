@@ -189,9 +189,11 @@ p:last-child { margin-bottom: 0; }
   text-transform: uppercase;
   color: var(--accent);
 }
-.nav-logo img {
-  height: 44px;
+.nav-logo img,
+.nav-logo-img {
+  height: 52px;
   width: auto;
+  display: block;
 }
 .nav-links {
   display: flex;

@@ -53,7 +53,7 @@ filterBtns.forEach(btn => {
   });
 });
 
-// ── Contact form (Formspree-ready) ──
+// ── Contact form ──
 const contactForm = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 
@@ -71,7 +71,8 @@ if (contactForm) {
         body: new FormData(contactForm),
         headers: { Accept: 'application/json' },
       });
-      if (res.ok) {
+      const data = await res.json();
+      if (res.ok && data.success) {
         contactForm.reset();
         if (formSuccess) formSuccess.style.display = 'block';
       } else {

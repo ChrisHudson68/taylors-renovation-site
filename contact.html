@@ -6,6 +6,8 @@
   <title>Contact Us | Taylors Renovation Co. — Tarboro, NC</title>
   <meta name="description" content="Contact Taylors Renovation Co. for a free estimate on your kitchen remodel, bathroom renovation, home addition, or repair project in Tarboro, NC." />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/webp" href="images/logo/logo.webp" />
+  <link rel="apple-touch-icon" href="images/logo/logo.webp" />
 </head>
 <body>
 
@@ -106,14 +108,10 @@
           <h3>Request a Free Estimate</h3>
           <p>Fill out the form below and we'll get back to you within one business day.</p>
 
-          <!--
-            TO MAKE THIS FORM FUNCTIONAL:
-            1. Sign up at https://formspree.io (free tier available)
-            2. Create a new form and copy your form ID
-            3. Replace "YOUR_FORM_ID" in the action below with your actual ID
-            Example: action="https://formspree.io/f/abcd1234"
-          -->
-          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form id="contact-form" action="https://formsubmit.co/nathan@taylorshvac.com" method="POST">
+            <input type="hidden" name="_cc" value="susan@taylorshvac.com" />
+            <input type="hidden" name="_subject" value="New Estimate Request — Taylors Renovation Co." />
+            <input type="hidden" name="_captcha" value="false" />
             <div class="form-row">
               <div class="form-group">
                 <label for="first-name">First Name *</label>
